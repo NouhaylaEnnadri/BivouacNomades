@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+<style>
+        /* Add your styles here */
+        .hidden {
+            display: none;
+        }
+
+        .grid {
+            /* Add your grid styles here */
+        }
+
+        .flex {
+            /* Add your product box styles here */
+        }
+</style>
+</head>
+
+<body>
+    <div class="bg-[#e4c5a71a]">
+
+        <br>
+        <div class="text-center mt-4">
+            <h1 class="text-3xl font-bold text-[#754F39]">Our Tours</h1>
+        </div>
+
+        <!-- component -->
+        <main class="grid w-full place-items-center mt-8">
+            <div class="grid w-full md:max-w-[50rem] grid-cols-4 gap-2 rounded-xl bg-[#e4c7a7a0] p-2">
+                <div>
+                    <input type="radio" name="option" id="foum" value="foum" class="peer hidden" checked onclick="filterProducts('foum')" />
+                    <label for="foum"
+                        class="block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-[#754F39] peer-checked:font-bold peer-checked:text-white text-sm md:text-base"
+                        data-filter=".foum">Foum zguig</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="option" id="marrakesh" value="marrakesh" class="peer hidden"
+                        onclick="filterProducts('marrakesh')" />
+                    <label for="marrakesh"
+                        class="block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-[#754F39] peer-checked:font-bold peer-checked:text-white text-sm md:text-base"
+                        data-filter=".marrakesh">Marrakesh</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="option" id="agadir" value="agadir" class="peer hidden" onclick="filterProducts('agadir')" />
+                    <label for="agadir"
+                    class="block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-[#754F39] peer-checked:font-bold peer-checked:text-white text-sm md:text-base"
+                    data-filter=".agadir">Agadir</label>
+                </div>
+            
+                <div>
+                    <input type="radio" name="option" id="lamhamid" value="lamhamid" class="peer hidden"
+                        onclick="filterProducts('lamhamid')" />
+                    <label for="lamhamid"
+                        class="block cursor-pointer select-none rounded-xl p-2 text-center peer-checked:bg-[#754F39] peer-checked:font-bold peer-checked:text-white text-sm md:text-base"
+                        data-filter=".lamhamid">Lamhamid</label>
+                </div>
+            </div>
+        </main>
+        <br>
+
+
+        <!-------- --------- - OUR TROURS- ------------------------------->
+        <!-- Desert Tours-->
+        <div class="text-center mt-4">
+            <h1 class="text-3xl font-bold">Desert Trours</h1>
+        </div>
+        <div class="container mx-auto p-4 flex flex-wrap justify-center ">
+
+            <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex agadir">
+                <div class="rounded overflow-hidden shadow-lg flex-1 ">
+                    <img class="w-full h-48 object-cover" src="../assets/images/ourTours/sidiAbdNbi.webp"
+                        alt="Sunset in the mountains">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="font-bold text-sm">3 days, 2 nights.</div>
+                            <div class="text-right text-sm">From 210€</div>
+                        </div>
+                        <p class="text-gray-700 text-base">
+                            Desert tour from Foum Zguid to lake iriki and sidi abdenbi
+                        </p>
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="flex items-center">
+                                <!-- Use a FontAwesome icon instead of an image -->
+                                <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                <span>Desert Tours</span>
+                            </div>
+                            <!-- Adjust styling for the Know More link -->
+                            <a href="#" class="text-black underline text-sm">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex">
+                <div class="rounded overflow-hidden shadow-lg flex-1">
+                    <img class="w-full h-48 object-cover" src="../assets/images/ourTours/Foum02.jpg"
+                        alt="Sunset in the mountains">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="font-bold text-sm">2 days, 1 night.</div>
+                            <div class="text-right text-sm">From 70€</div>
+                        </div>
+                        <p class="text-gray-700 text-base">
+                            To Erg Elmhazil desert from foum zguid
+                        </p>
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="flex items-center">
+                                <!-- Use a FontAwesome icon instead of an image -->
+                                <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                <span>Desert Tours</span>
+                            </div>
+                            <!-- Adjust styling for the Know More link -->
+                            <a href="#" class="text-black underline text-sm">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex">
+                <div class="rounded overflow-hidden shadow-lg flex-1">
+                    <img class="w-full h-48 object-cover"
+                        src="../assets/images/tripAdvisor/camel-trekking-departure.jpg" alt="Sunset in the mountains">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="font-bold text-sm">2 days, 1 nights.</div>
+                            <div class="text-right text-sm">From 80€</div>
+                        </div>
+                        <p class="text-gray-700 text-base">
+                            In Erg chegaga desert departure from Foum Zguid
+                        </p>
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="flex items-center">
+                                <!-- Use a FontAwesome icon instead of an image -->
+                                <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                <span>Desert Tours</span>
+                            </div>
+                            <!-- Adjust styling for the Know More link -->
+                            <a href="#" class="text-black underline text-sm">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex">
+                <div class="rounded overflow-hidden shadow-lg flex-1">
+                    <img class="w-full h-48 object-cover" src="../assets/images/ourTours/THE_ROCK_ENGRAVINGS_DESERT.jpg"
+                        alt="Sunset in the mountains">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="flex justify-between items-center mb-2">
+                            <div class="font-bold text-sm">1 Day</div>
+                            <div class="text-right text-sm">168€</div>
+                        </div>
+                        <p class="text-gray-700 text-base">
+                            The rock engravings desert tour from Foum Zguid
+                        </p>
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="flex items-center">
+                                <!-- Use a FontAwesome icon instead of an image -->
+                                <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                <span>Desert Tours</span>
+                            </div>
+                            <!-- Adjust styling for the Know More link -->
+                            <a href="#" class="text-black underline text-sm">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----DESERT TOURS END-->
+
+            <!-- Trecking beginning -->
+        </div>
+        <div class="text-center mt-4 bg-[#e4c5a723] ">
+            <h1 class="text-3xl font-bold py-4">Desert Trekking</h1>
+
+            <div class="container mx-auto p-4 flex flex-wrap justify-center  ">
+
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex agadir">
+                    <div class="rounded overflow-hidden shadow-lg flex-1 ">
+                        <img class="w-full h-48 object-cover" src="../assets/images/ourTours/foum05.jpg"
+                            alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-bold text-sm">2 - 3 days.</div>
+                                <div class="text-right text-sm">From 100€</div>
+                            </div>
+                            <p class="text-gray-700 text-base">
+                                Desert trekking, beginner level, includes 5 different tours.
+                            </p>
+                            <div class="flex justify-between items-center mt-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                    <span>Desert Trekking</span>
+                                </div>
+                                <a href="#" class="text-black underline text-sm">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex">
+                    <div class="rounded overflow-hidden shadow-lg flex-1 ">
+                        <img class="w-full h-48 object-cover" src="../assets/images/ourTours/camelDesert.jpg"
+                            alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-bold text-sm">5 - 7 days.</div>
+                                <div class="text-right text-sm">From 200€</div>
+                            </div>
+                            <p class="text-gray-700 text-base">
+                                Desert trekking, Medium level, includes 2 different tours.
+                            </p>
+                            <div class="flex justify-between items-center mt-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                    <span>Desert Trekking</span>
+                                </div>
+                                <a href="#" class="text-black underline text-sm">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex">
+                    <div class="rounded overflow-hidden shadow-lg flex-1 ">
+                        <img class="w-full h-48 object-cover" src="../assets/images/ourTours/trecking.jpg"
+                            alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="font-bold text-sm">3 - 11 days.</div>
+                                <div class="text-right text-sm">From 290€</div>
+                            </div>
+                            <p class="text-gray-700 text-base">
+                                Desert trekking, Advanced level, includes 2 different tours.
+                            </p>
+                            <div class="flex justify-between items-center mt-2">
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                    <span>Desert Trekking</span>
+                                </div>
+                                <a href="#" class="text-black underline text-sm">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----Trecking ending -->
+
+            <!--Activities beginning-->
+            <div class="bg-[#897c6f26]">
+                <div class="text-center mt-4 bg-[#e4c5a723] ">
+                    <h1 class="text-3xl font-bold py-4">Desert Activites</h1>
+
+                    <div class="container mx-auto p-4 flex flex-wrap justify-center  ">
+
+                        <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex">
+                            <div class="rounded overflow-hidden shadow-lg flex-1 ">
+                                <img class="w-full h-48 object-cover" src="../assets/images/ourTours/camel trekking.jpg"
+                                    alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="flex justify-between items-center mb-2">
+                                    </div>
+                                    <p class="text-gray-700 text-base text-left text-justify">
+                                        Camel riding in the desert of lake Iriki and Irg Chegaga dunes.
+                                    </p>
+
+                                    <div class="flex justify-between items-center mt-2">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                            <span>Desert Activities</span>
+                                        </div>
+                                        <a href="#" class="text-black underline text-sm">Know More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex">
+                            <div class="rounded overflow-hidden shadow-lg flex-1 ">
+                                <img class="w-full h-48 object-cover" src="../assets/images/ourTours/quad.jpg"
+                                    alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="flex justify-between items-center mb-2">
+                                    </div>
+                                    <p class="text-gray-700 text-base text-left text-justify">
+                                        Quad bike riding in erg chegaga sahara desert and iriki lake from foum zgoug and
+                                        mhamid el ghizlane </p>
+
+                                    <div class="flex justify-between items-center mt-2">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                            <span>Desert Activities</span>
+                                        </div>
+                                        <a href="#" class="text-black underline text-sm">Know More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex">
+                            <div class="rounded overflow-hidden shadow-lg flex-1 ">
+                                <img class="w-full h-48 object-cover"
+                                    src="../assets/images/ourTours/SANDBOARDING_IN_THE DUNES.jpg"
+                                    alt="Sunset in the mountains">
+                                <div class="px-6 py-4">
+                                    <div class="flex justify-between items-center mb-2">
+                                    </div>
+                                    <p class="text-gray-700 text-base">
+                                        Desert trekking, Advanced level, includes 2 different tours.
+                                    </p>
+                                    <div class="flex justify-between items-center mt-2">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-map-marker-alt text-amber-950 mr-2"></i>
+                                            <span>Desert Trekking</span>
+                                        </div>
+                                        <a href="#" class="text-black underline text-sm">Know More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+<script>
+    // JavaScript
+   function filterProducts(location) {
+        // Get all product elements
+        var products = document.querySelectorAll('.flex');
+
+        // Show all products if the location is "all"
+        if (location === 'all') {
+            products.forEach(function (product) {
+                product.style.display = 'flex';
+            });
+        } else {
+            // Hide all products
+            products.forEach(function (product) {
+                product.style.display = 'none';
+            });
+
+            // Show only products with the selected location
+            var filteredProducts = document.querySelectorAll('.' + location);
+            filteredProducts.forEach(function (product) {
+                product.style.display = 'flex';
+            });
+        }
+    }
+
+</script>
+
+
+</body>
+
+</html>
